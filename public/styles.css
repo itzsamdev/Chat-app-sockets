@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+    background-color: #e07c24b7;
     border: 2px solid black;
     border-radius: 10px;
     width: 600px;
@@ -32,7 +33,8 @@ body {
     justify-content: center;
     /* border: 1px solid red; */
     padding: -10px;
-    border-bottom: 1.5px solid black;
+    /* border-bottom: 1.5px solid black; */
+    margin-bottom: 1rem;
 }
 
 .icons {
@@ -57,10 +59,10 @@ i {
 .message {
     /* border: 2px solid red; */
     background-color: rgba(255, 255, 255, 0.948);
-    border-radius: 30%;
+    border-radius: 10%;
     width: fit-content;
     margin: 14px 12px;
-    padding: 10px 8px;
+    padding: 10px 20px;
 }
 
 .incoming {
@@ -77,13 +79,19 @@ i {
     width: 100%;
     padding: 0.7rem;
     color: black;
-    background-color: #E07C24;
+    /* background-color: #E07C24; */
 }
+
+/* .join-area {
+    overflow-y: auto;
+} */
 
 form {
     height: 10%;
     width: 100%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
 }
 
 #text-input {
@@ -91,12 +99,13 @@ form {
     height: 100%;
     font-size: 1rem;
     border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #btn {
-    padding: 8px 10px;
-    background-color: #E07C24;
+    padding: 1rem 1.1rem;
+    background-color: #50f713;
     color: black;
     cursor: pointer;
-
+    font-size: 1rem;
 }
