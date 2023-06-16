@@ -3,14 +3,25 @@ const socket = io()
 const textArea = document.querySelector(".text-area")
 const form = document.querySelector("form");
 const input = document.getElementById("text-input")
+const joinArea = document.querySelector(".join-area")
 
 let name;
 do {
-    name = prompt("Enter ypir name");
+    name = prompt("Enter Your Name");
 } while (!name)
 
 socket.emit("new-user-joined", name);
 
+
+socket.on("user-joined", (name) => {
+    // .new-member
+    let newUser = document.createElement('div');
+    newUser.innerHTML = `<p> ${name} joined the chat </p>`
+    newUser.classList.add("new-member")
+    console.log(newUser);
+    joinArea.appendChild(newUser);
+
+})
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     if (input.value) {
