@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     /* overflow: auto; */
-    overflow-y: auto;
+
 }
 
 .container-header {
@@ -51,6 +51,7 @@ i {
     /* border: 2px solid yellow; */
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .message {
